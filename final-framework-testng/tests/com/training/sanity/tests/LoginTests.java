@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -45,11 +46,19 @@ public class LoginTests {
 		Thread.sleep(1000);
 		driver.quit();
 	}
+	
 	@Test
-	public void validLoginTest() {
+	public void validLoginTest() throws InterruptedException {
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
+		Thread.sleep(1000);
+		String actualUsername=loginPOM.getUserName();
+        String expectedUsername="admin";
+        Assert.assertEquals(actualUsername, expectedUsername);
+		String actualPassword=loginPOM.getPassword();
+        String expectedPassword="admin@123";
+        Assert.assertEquals(actualPassword, expectedPassword);
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		screenShot.captureScreenShot("Login_Success");
 	}
 }
