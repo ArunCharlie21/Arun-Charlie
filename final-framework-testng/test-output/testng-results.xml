@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19423" started-at="2020-06-30T12:39:26 IST" finished-at="2020-06-30T12:39:45 IST">
+  <suite name="Default suite" duration-ms="16802" started-at="2020-07-02T11:56:16 IST" finished-at="2020-07-02T11:56:33 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19423" started-at="2020-06-30T12:39:26 IST" finished-at="2020-06-30T12:39:45 IST">
+    <test name="Default test" duration-ms="16802" started-at="2020-07-02T11:56:16 IST" finished-at="2020-07-02T11:56:33 IST">
       <class name="com.training.sanity.tests.DeleteCatlogTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2020-06-30T12:39:26 IST" finished-at="2020-06-30T12:39:26 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="setUpBeforeClass" is-config="true" duration-ms="7" started-at="2020-07-02T11:56:16 IST" finished-at="2020-07-02T11:56:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="setUp" is-config="true" duration-ms="14393" started-at="2020-06-30T12:39:26 IST" finished-at="2020-06-30T12:39:40 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="setUp" is-config="true" duration-ms="13080" started-at="2020-07-02T11:56:16 IST" finished-at="2020-07-02T11:56:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="validLoginTest" duration-ms="3075" started-at="2020-06-30T12:39:41 IST" finished-at="2020-06-30T12:39:44 IST">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="validLoginTest" duration-ms="2066" started-at="2020-07-02T11:56:29 IST" finished-at="2020-07-02T11:56:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="tearDown" is-config="true" duration-ms="1858" started-at="2020-06-30T12:39:44 IST" finished-at="2020-06-30T12:39:45 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.DeleteCatlogTest@614ddd49]" name="tearDown" is-config="true" duration-ms="1613" started-at="2020-07-02T11:56:31 IST" finished-at="2020-07-02T11:56:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

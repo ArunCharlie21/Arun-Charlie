@@ -18,6 +18,8 @@ import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
+//Objective of the test case is verify whether application allows the admin to delete a category from list of Categories
+
 public class DeleteCatlogTest {
 	private WebDriver driver;
 	private String baseUrl;
@@ -42,7 +44,9 @@ public class DeleteCatlogTest {
 		deletePOM = new DeletePOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
+		//launching the application
 		driver.get(baseUrl);
+		// passing the credentials to login
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn();
@@ -58,14 +62,19 @@ public class DeleteCatlogTest {
 	@Test 
 	public void validLoginTest() throws InterruptedException {		
 		
+		//below method is to hover the mouse over catlog 
 		catlogPOM2.catlog();
+		// below method is to select the category
 		catlogPOM2.category();
+		// below method selects the category that needs to be deleted
 		deletePOM.catlogSelection();
 		Thread.sleep(1000);
 		screenShot.captureScreenShot("Category Selected");
 		boolean actualResult=deletePOM.catlogValidate();		
 		String expectedResult="true";
+		// assertion to check if the category checkbox is selected
 		Assert.assertTrue(actualResult, expectedResult);
+		// below method deleted the selected category
 		deletePOM.deletion();
        
 	}

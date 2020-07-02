@@ -19,7 +19,7 @@ public class LoginPOM {
 	@FindBy(id="input-password")
 	private WebElement password;
 	
-	@FindBy(xpath="//text()[contains(.,'Login')]/ancestor::button[1]")
+	@FindBy(xpath="//button[@type='submit']")	
 	private WebElement loginBtn; 
 	
 	public void sendUserName(String userName) {

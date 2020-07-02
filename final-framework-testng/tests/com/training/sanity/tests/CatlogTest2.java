@@ -17,13 +17,15 @@ import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-	public class CatlogTest2 {
-	private WebDriver driver;
-	private String baseUrl;
-	private LoginPOM loginPOM;
-	private static Properties properties;
-	private ScreenShot screenShot;
-	private CatlogPOM2 catlogPOM2;
+//Objective of the test case is to Verify whether application allows the admin to display list of Categories
+
+public class CatlogTest2 {
+		private WebDriver driver;
+		private String baseUrl;
+		private LoginPOM loginPOM;
+		private static Properties properties;
+		private ScreenShot screenShot;
+		private CatlogPOM2 catlogPOM2;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -38,8 +40,10 @@ import com.training.utility.DriverNames;
 		loginPOM = new LoginPOM(driver); 
 		catlogPOM2 = new CatlogPOM2(driver);
 		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
+		screenShot = new ScreenShot(driver);
+		// launching the application
 		driver.get(baseUrl);
+		// providing the credentials and login
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn(); 
@@ -53,13 +57,16 @@ import com.training.utility.DriverNames;
 	
 	@Test 
 	public void validLoginTest() throws InterruptedException {
-
+		
+		//the below method is to hover the mouse over catlog
         catlogPOM2.catlog();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         String actualResult=catlogPOM2.catlogCheck();
-        catlogPOM2.category();
         String expectedResult="Categories";
+        //validating whether categories is displayed
         Assert.assertEquals(actualResult, expectedResult);
+        //below method clicks on the category link
+        catlogPOM2.category();
         screenShot.captureScreenShot("Catlog");
         
 	}

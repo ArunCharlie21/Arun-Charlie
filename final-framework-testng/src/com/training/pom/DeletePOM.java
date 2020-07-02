@@ -13,7 +13,7 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/input[1]")
+	@FindBy(xpath="//input[@type='checkbox'][@value='750']")
 	private WebElement catalogSelect; 
 	
 	@FindBy(xpath="//button[@class='btn btn-danger']")
