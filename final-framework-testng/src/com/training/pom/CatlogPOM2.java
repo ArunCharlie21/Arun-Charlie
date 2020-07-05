@@ -28,8 +28,8 @@ private WebDriver driver;
 	
 	public String catlogCheck() {
 		return this.categories.getText();
-
 	}
+	
 	public void category() {
 		this.categories.click();
 	}

@@ -20,7 +20,7 @@ import com.training.utility.DriverNames;
 
 //Objective of the test case is verify whether application allows the admin to delete a category from list of Categories
 
-public class DeleteCatlogTest {
+public class S3_DeleteCategory {
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;

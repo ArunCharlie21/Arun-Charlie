@@ -19,7 +19,7 @@ import com.training.utility.DriverNames;
 
 //Objective of the test case is to Verify whether application allows the admin to display list of Categories
 
-public class CatlogTest2 {
+public class S2_SelectCategory {
 		private WebDriver driver;
 		private String baseUrl;
 		private LoginPOM loginPOM;

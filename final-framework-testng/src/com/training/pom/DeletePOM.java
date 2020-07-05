@@ -1,5 +1,6 @@
 package com.training.pom;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +14,7 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//input[@type='checkbox'][@value='750']")
+	@FindBy(xpath="//input[@type='checkbox'][@value='933']")
 	private WebElement catalogSelect; 
 	
 	@FindBy(xpath="//button[@class='btn btn-danger']")
@@ -30,6 +31,8 @@ private WebDriver driver;
 	
 	public void deletion() {
 		this.deleteCat.click();
+        Alert alertpop=driver.switchTo().alert();
+        alertpop.accept();
 	}
 
 

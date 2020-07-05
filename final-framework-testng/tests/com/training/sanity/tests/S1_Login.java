@@ -19,7 +19,7 @@ import com.training.utility.DriverNames;
 
 //Objective of the test case is to verify whether application allows admin to get logged in by entering valid credentials in required field
 
-public class LoginTests {
+public class S1_Login {
 
 	private WebDriver driver;
 	private String baseUrl;
