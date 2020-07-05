@@ -129,6 +129,7 @@ public class M3_AddProduct {
         addProductPOM.Design();
         //below method clicks on Save
         addProductPOM.Save();
+        screenShot.captureScreenShot("Product added sucessfully");
 
 	}
 }

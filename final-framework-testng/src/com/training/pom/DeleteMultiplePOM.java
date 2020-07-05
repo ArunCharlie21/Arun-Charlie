@@ -13,10 +13,10 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//input[@type='checkbox'][@value='791']")
+	@FindBy(xpath="//input[@type='checkbox'][@value='728']")
 	private WebElement catalogSelect2; 
 	
-	@FindBy(xpath="//input[@type='checkbox'][@value='793']")
+	@FindBy(xpath="//input[@type='checkbox'][@value='729']")
 	private WebElement catalogSelect3; 
 	
 	
