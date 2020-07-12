@@ -19,10 +19,17 @@ public class LoginDataProviders {
 		Object[][] result = new Object[list.size()][]; 
 		int count = 0; 
 		for(LoginBean temp : list){
-			Object[]  obj = new Object[2]; 
+			Object[]  obj = new Object[9]; 
 			obj[0] = temp.getUserName(); 
 			obj[1] = temp.getPassword(); 
-			
+			obj[2] = temp.getProductName();
+			obj[3] = temp.getMetatag();
+			obj[4] = temp.getModel();
+			obj[5] = temp.getPrice();
+			obj[6] = temp.getQuantity();
+			obj[7] = temp.getQuantity1();
+			obj[8] = temp.getPrice1();
+					
 			result[count ++] = obj; 
 		}
 		
@@ -32,13 +39,13 @@ public class LoginDataProviders {
 	
 	@DataProvider(name = "excel-inputs")
 	public Object[][] getExcelData(){
-		String fileName ="C:/Users/Naveen/Desktop/Testing.xlsx"; 
+		String fileName ="C:\\Arun\\Reskill IBM\\Selenium\\Selenium Env 1\\Test Data\\ComplexTest.xlsx"; 
 		return new ApachePOIExcelRead().getExcelContent(fileName); 
 	}
 	
-	@DataProvider(name = "xls-inputs")
+	/*@DataProvider(name = "xls-inputs")
 	public Object[][] getXLSData(){
 		// ensure you will have the title as first line in the file 
-		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
-	}
+		return new ReadExcel().getExcelData("C:/Arun/Reskill IBM/Selenium/Selenium Env 1/Test Data/ComplexTest.xlsx", "Sheet1"); 
+	}*/
 }

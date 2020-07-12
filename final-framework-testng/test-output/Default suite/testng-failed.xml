@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.M1_DeleteMultipleCategory">
+      <class name="com.training.sanity.tests.C3_ErrorValidationExcel">
         <methods>
           <include name="setUpBeforeClass"/>
           <include name="setUp"/>
+          <include name="validLoginTest" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="validLoginTest"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.M1_DeleteMultipleCategory -->
+      </class> <!-- com.training.sanity.tests.C3_ErrorValidationExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
